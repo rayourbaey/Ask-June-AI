@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Chat Generator",
+  "version": "1.0",
+  "description": "Ekstensi untuk mengirim pertanyaan otomatis random dari question.txt. Powered by BRAYY",
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "action": { "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "web_accessible_resources": [
+    { "resources": ["question.txt"], "matches": ["<all_urls>"] }
+  ]
+}
